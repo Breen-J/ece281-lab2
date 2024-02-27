@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 02/19/2024 08:29:28 PM
 -- Design Name: 
--- Module Name: sevenSegDecovder - Behavioral
+-- Module Name: sevenSegDecoder - Behavioral
 -- Project Name: binaryHexDisp
 -- Target Devices: Basay3 Board
 -- Tool Versions: 
@@ -31,12 +31,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity sevenSegDecovder is
+entity sevenSegDecoder is
     Port ( i_D : in STD_LOGIC_VECTOR (3 downto 0);
            o_S : out STD_LOGIC_VECTOR (6 downto 0));
-end sevenSegDecovder;
+end sevenSegDecoder;
 
-architecture Behavioral of sevenSegDecovder is
+architecture Behavioral of sevenSegDecoder is
 
 begin
 		
