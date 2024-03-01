@@ -59,7 +59,7 @@ test_process : process
 	begin
 	-- Place test cases here. The first two have been written for you
 	    w_sw <= "0000"; wait for 10 ns;
-            assert w_seg = x"40" report "error on 0" severity failure;
+            assert w_seg = x"1000000" report "error on 0" severity failure;
             
         w_sw <= "0001"; wait for 10 ns;
             assert w_seg = x"79" report "error on 1" severity failure; 
@@ -104,7 +104,7 @@ test_process : process
            assert w_seg = x"06" report "error on E" severity failure;   
                            
         w_sw <= "1111"; wait for 10 ns;
-           assert w_seg = x"E" report "error on F" severity failure;
+           assert w_seg = "0011110" report "error on F" severity failure;
         
         report "Completed Testing";
                      
