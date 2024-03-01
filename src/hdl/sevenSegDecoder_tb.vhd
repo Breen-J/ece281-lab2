@@ -83,7 +83,7 @@ test_process : process
             assert w_seg = x"78" report "error on 7" severity failure;
             
         w_sw <= "1000"; wait for 10 ns;
-            assert w_seg = "0000000" report "error on 8" severity failure;
+            assert w_seg = x"00" report "error on 8" severity failure;
             
         w_sw <= "1001"; wait for 10 ns;
             assert w_seg = x"18" report "error on 9" severity failure; 
