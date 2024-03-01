@@ -104,7 +104,7 @@ test_process : process
            assert w_seg = x"06" report "error on E" severity failure;   
                            
         w_sw <= "1111"; wait for 10 ns;
-           assert w_seg = x"1e" report "error on F" severity failure;
+           assert w_seg = x"0E" report "error on F" severity failure;
         
         report "Completed Testing";
                      
