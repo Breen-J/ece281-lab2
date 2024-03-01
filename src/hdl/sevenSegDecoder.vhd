@@ -39,7 +39,7 @@ end sevenSegDecoder;
 architecture Behavioral of sevenSegDecoder is
 
 begin
-		
+	
     o_S <= "1000000" when (i_D = "0000") else -- 0... G
 	       "1111001" when (i_D = "0001") else -- 1... A, F, G, E, D
 	       "0100100" when (i_D = "0010") else -- 2... F, C
